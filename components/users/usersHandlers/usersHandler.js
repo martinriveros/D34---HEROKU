@@ -27,7 +27,9 @@ class UsersHandler {
 
     res.render('layouts/info', {data})
   }
-
+  async getArgvInfo2(req, res, next) {
+      res.send('THIS IS A MODIFICATION TEST FOR HEROKU')
+  }
   async getRandoms(req, res, next){
     
         const {cant} = req.query;
